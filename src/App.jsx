@@ -93,11 +93,15 @@ const pagesByPath = Object.fromEntries(
 );
 
 function pageFromPath(pathname) {
-  const path = pathname.replace(/\/+$/, "").replace(/^\//, "");
-  if (path === basePath.slice(1) || path === "") return "home";
-  const prefix = `${basePath.slice(1)}/`;
-  if (!path.startsWith(prefix)) return null;
-  return pagesByPath[path.slice(prefix.length)] || null;
+  const routeBase = basePath.replace(/^\/+|\/+$/g, "");
+  const path = pathname.replace(/^\/+|\/+$/g, "");
+  if (routeBase && path === routeBase) return "home";
+  if (routeBase) {
+    const prefix = `${routeBase}/`;
+    if (!path.startsWith(prefix)) return null;
+    return pagesByPath[path.slice(prefix.length)] || null;
+  }
+  return path ? pagesByPath[path] || null : "home";
 }
 
 export default function App() {
