@@ -34,7 +34,7 @@ export default function Footer({ navigate }) {
             {/* <h3>Address</h3> */}
             <div className="footer-contact-item">
               <MapPin aria-hidden="true" />
-              <p className="footer-description">Amreen Consultancy, Shop No 3, Siyara Elite, Kalyan - Bhiwandi Rd,
+              <p className="footer-description">Amreen Consultancy, Office No 103, Siyara Elite, Kalyan - Bhiwandi Rd,
                 opposite BPCL Petrol Pump, Sapna Industrial Estate, Naka, Gove, Kalyan, Maharashtra 421311</p>
             </div>
 
