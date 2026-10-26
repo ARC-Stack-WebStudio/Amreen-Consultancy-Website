@@ -1,0 +1,89 @@
+.recruitment-enquiry-form {
+  background: #fff;
+  padding: 30px;
+  border: 2px solid #0d6efd;
+  border-radius: 15px;
+}
+
+.recruitment-enquiry-form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #17324d;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.recruitment-enquiry-form label span[aria-hidden="true"] {
+  color: #b42318;
+}
+
+.recruitment-enquiry-form input,
+.recruitment-enquiry-form select,
+.recruitment-enquiry-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #d7dce2;
+  border-radius: 6px;
+  color: #23364a;
+  background: #fff;
+  font: inherit;
+}
+
+.recruitment-enquiry-form textarea {
+  min-height: 132px;
+  resize: vertical;
+}
+
+.recruitment-enquiry-form input:focus,
+.recruitment-enquiry-form select:focus,
+.recruitment-enquiry-form textarea:focus {
+  outline: 0;
+  border-color: var(--color-royal-blue);
+  box-shadow: 0 0 0 3px rgba(21, 159, 224, 0.14);
+}
+
+.recruitment-enquiry-form [aria-invalid="true"] {
+  border-color: #b42318;
+}
+
+.recruitment-enquiry-form small {
+  display: block;
+  margin-top: 5px;
+  color: #b42318;
+  font-size: 0.78rem;
+}
+
+.recruitment-form-success,
+.recruitment-form-error {
+  margin-bottom: 20px;
+  padding: 13px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.recruitment-form-success {
+  color: #14532d;
+  background: #eef8f0;
+  border: 1px solid #cce8d2;
+}
+
+.recruitment-form-error {
+  color: #842029;
+  background: #fff1f0;
+  border: 1px solid #f3c7c4;
+}
+
+.form-privacy-note {
+  margin: 12px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 575.98px) {
+  .recruitment-enquiry-form {
+    padding: 20px;
+  }
+}
