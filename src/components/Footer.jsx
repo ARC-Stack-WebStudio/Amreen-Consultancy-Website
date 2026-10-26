@@ -1,5 +1,5 @@
 import Brand from "./Brand";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { MapPin, Phone } from "lucide-react";
 
 export default function Footer({ navigate }) {
   const Link = ({ to, children }) => (

@@ -3,7 +3,6 @@ import {
   BrickWall,
   Cable,
   ClipboardCheck,
-  HardHat,
   Hammer,
   MoveUpRight,
   Ruler,

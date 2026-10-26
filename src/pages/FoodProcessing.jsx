@@ -10,7 +10,6 @@ import {
   Settings2,
   Truck,
   UsersRound,
-  Wrench,
 } from 'lucide-react';
 import workforceHero from '../assets/Imgs/Industries Side Imgs/Food Processing Side Img.jpg';
 import SectionTitle from '../components/SectionTitle';

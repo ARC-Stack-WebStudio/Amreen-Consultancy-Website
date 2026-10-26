@@ -10,7 +10,6 @@ import {
   Settings2,
   Truck,
   UsersRound,
-  Wrench,
 } from 'lucide-react';
 import workforceHero from '../assets/Imgs/Workforce Hero Img.webp';
 import SectionTitle from '../components/SectionTitle';

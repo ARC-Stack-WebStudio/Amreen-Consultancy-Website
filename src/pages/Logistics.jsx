@@ -3,14 +3,12 @@ import {
   BrickWall,
   Cable,
   ClipboardCheck,
-  HardHat,
   Hammer,
   MoveUpRight,
   Ruler,
   Settings2,
   Truck,
   UsersRound,
-  Wrench,
 } from 'lucide-react';
 import workforceHero from '../assets/Imgs/Industries Side Imgs/Logistics Side Img.jpg';
 import SectionTitle from '../components/SectionTitle';
