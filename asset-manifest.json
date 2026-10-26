@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Amreen-Consultancy-Website/static/css/main.ac9cb1d5.css",
-    "main.js": "/Amreen-Consultancy-Website/static/js/main.8a99a79e.js",
+    "main.js": "/Amreen-Consultancy-Website/static/js/main.9ff3515f.js",
     "static/media/Saudi Arabia Hero.png": "/Amreen-Consultancy-Website/static/media/Saudi Arabia Hero.94b16781238dcd61261b.png",
     "static/media/Saudi Arabia Construcion.png": "/Amreen-Consultancy-Website/static/media/Saudi Arabia Construcion.bd6ff966b65a084a48f3.png",
     "static/media/Qatar Hero.png": "/Amreen-Consultancy-Website/static/media/Qatar Hero.dbbf5efebc5cff2e612d.png",
@@ -27,12 +27,9 @@
     "static/media/Logistics Hero section.png": "/Amreen-Consultancy-Website/static/media/Logistics Hero section.c48201a46b74b0642323.png",
     "static/media/global-opportunities-hero.png": "/Amreen-Consultancy-Website/static/media/global-opportunities-hero.ce66bda4f0137282050e.png",
     "static/media/about-global-visual.png": "/Amreen-Consultancy-Website/static/media/about-global-visual.08c21c2abc5421019bfb.png",
-    "static/media/Amreen Icon White.png": "/Amreen-Consultancy-Website/static/media/Amreen Icon White.4baa13cfffdff93a43d5.png",
     "static/media/New Pro Logo.png": "/Amreen-Consultancy-Website/static/media/New Pro Logo.4fe74f3fb48f09f52ebd.png",
-    "static/media/Amreen Icon.png": "/Amreen-Consultancy-Website/static/media/Amreen Icon.402ec9b96cff84a7f093.png",
     "static/media/Mining Hero section.webp": "/Amreen-Consultancy-Website/static/media/Mining Hero section.3806787293914c466d4f.webp",
     "static/media/Petrochemical Hero section.webp": "/Amreen-Consultancy-Website/static/media/Petrochemical Hero section.2c570ad916594e82fbbb.webp",
-    "static/media/AMREEN Logo White.png": "/Amreen-Consultancy-Website/static/media/AMREEN Logo White.3705f5bd6e7e172e7d62.png",
     "static/media/Construction Hero section.webp": "/Amreen-Consultancy-Website/static/media/Construction Hero section.b48f387fd3393bf9cf2e.webp",
     "static/media/Oil & Gas Hero section.webp": "/Amreen-Consultancy-Website/static/media/Oil & Gas Hero section.2b5bcac47a0a2349425d.webp",
     "static/media/Shipbuilding Side Img.jpg": "/Amreen-Consultancy-Website/static/media/Shipbuilding Side Img.540e3288c9c8bde91103.jpg",
@@ -51,10 +48,10 @@
     "static/media/world-map.jpeg": "/Amreen-Consultancy-Website/static/media/world-map.844681b42ea6faedb34a.jpeg",
     "index.html": "/Amreen-Consultancy-Website/index.html",
     "main.ac9cb1d5.css.map": "/Amreen-Consultancy-Website/static/css/main.ac9cb1d5.css.map",
-    "main.8a99a79e.js.map": "/Amreen-Consultancy-Website/static/js/main.8a99a79e.js.map"
+    "main.9ff3515f.js.map": "/Amreen-Consultancy-Website/static/js/main.9ff3515f.js.map"
   },
   "entrypoints": [
     "static/css/main.ac9cb1d5.css",
-    "static/js/main.8a99a79e.js"
+    "static/js/main.9ff3515f.js"
   ]
 }
