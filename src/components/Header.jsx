@@ -22,16 +22,16 @@ export default function Header({ page, navigate }) {
 
 	useEffect(() => {
 		const onScroll = () => setScrolled(window.scrollY > 16);
-		addEventListener('scroll', onScroll);
-		return () => removeEventListener('scroll', onScroll);
+		window.addEventListener('scroll', onScroll);
+		return () => window.removeEventListener('scroll', onScroll);
 	}, []);
 
 	useEffect(() => {
 		const key = (e) => e.key === 'Escape' && setOpen(false);
-		addEventListener('keydown', key);
+		window.addEventListener('keydown', key);
 		document.body.style.overflow = open ? 'hidden' : '';
 		return () => {
-			removeEventListener('keydown', key);
+			window.removeEventListener('keydown', key);
 			document.body.style.overflow = '';
 		};
 	}, [open]);

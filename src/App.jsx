@@ -55,7 +55,7 @@ const pages = {
   "country-russia": CountryPage,
 };
 
-const basePath = "/Amreen-Consultancy";
+const basePath = process.env.PUBLIC_URL || "";
 const pagePaths = {
   home: "",
   about: "about",

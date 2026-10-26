@@ -1,8 +1,17 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+beforeEach(() => {
+  window.scrollTo = jest.fn();
+  window.IntersectionObserver = class {
+    observe() {}
+    disconnect() {}
+  };
+});
+
+test('renders the Amreen Consultancy website', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(
+    screen.getByRole('heading', { name: /global opportunities start here/i }),
+  ).toBeInTheDocument();
 });
