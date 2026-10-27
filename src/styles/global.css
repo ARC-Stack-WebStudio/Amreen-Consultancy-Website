@@ -3453,6 +3453,16 @@ footer button:hover {
   .construction-cta .btn {
     justify-content: center
   }
+
+  .brand img{
+    height: 60px;
+  }  
+}
+
+@media(max-width: 479.98px) {
+  .brand img{
+    height: 50px;
+  }  
 }
 
 /* Workforce route */
