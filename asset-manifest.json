@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bf2ce1ff.css",
-    "main.js": "/static/js/main.c1dd937f.js",
+    "main.js": "/static/js/main.29ce83b8.js",
     "static/media/Saudi Arabia Hero.png": "/static/media/Saudi Arabia Hero.94b16781238dcd61261b.png",
     "static/media/Saudi Arabia Construcion.png": "/static/media/Saudi Arabia Construcion.bd6ff966b65a084a48f3.png",
     "static/media/Qatar Hero.png": "/static/media/Qatar Hero.dbbf5efebc5cff2e612d.png",
@@ -48,10 +48,10 @@
     "static/media/world-map.jpeg": "/static/media/world-map.844681b42ea6faedb34a.jpeg",
     "index.html": "/index.html",
     "main.bf2ce1ff.css.map": "/static/css/main.bf2ce1ff.css.map",
-    "main.c1dd937f.js.map": "/static/js/main.c1dd937f.js.map"
+    "main.29ce83b8.js.map": "/static/js/main.29ce83b8.js.map"
   },
   "entrypoints": [
     "static/css/main.bf2ce1ff.css",
-    "static/js/main.c1dd937f.js"
+    "static/js/main.29ce83b8.js"
   ]
 }
