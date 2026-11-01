@@ -17,11 +17,12 @@
   "homepage": "https://arc-stack-webstudio.github.io/Amreen-Consultancy-Website",
   "scripts": {
     "start": "react-scripts start",
-    "build": "node build-github-pages.js",
-    "predeploy": "npm run build",
+    "build": "npm run build:production",
+    "predeploy": "npm run build:github",
     "deploy": "gh-pages -d build",
-    "build:github-pages": "npm run build",
-    "build:production": "node build-production.js"
+    "build:github-pages": "npm run build:github",
+    "build:production": "node build-production.js",
+    "build:github": "node build-github-pages.js"
   },
   "eslintConfig": {
     "extends": [
