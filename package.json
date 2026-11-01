@@ -1,45 +1,46 @@
 {
-  "name": "myapp",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/dom": "^10.4.2",
-    "@testing-library/jest-dom": "^6.9.1",
-    "@testing-library/react": "^16.3.3",
-    "@testing-library/user-event": "^13.5.0",
-    "bootstrap": "^5.3.8",
-    "lucide-react": "^1.61.0",
-    "react": "^19.3.1",
-    "react-dom": "^19.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
-  "homepage": "https://amreenconsultancy.com",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^6.3.0"
-  }
+    "name":  "myapp",
+    "version":  "0.1.0",
+    "private":  true,
+    "dependencies":  {
+                         "@testing-library/dom":  "^10.4.2",
+                         "@testing-library/jest-dom":  "^6.9.1",
+                         "@testing-library/react":  "^16.3.3",
+                         "@testing-library/user-event":  "^13.5.0",
+                         "bootstrap":  "^5.3.8",
+                         "lucide-react":  "^1.61.0",
+                         "react":  "^19.3.1",
+                         "react-dom":  "^19.3.1",
+                         "react-scripts":  "5.0.1",
+                         "web-vitals":  "^2.1.4"
+                     },
+    "homepage":  "https://amreenconsultancy.com",
+    "scripts":  {
+                    "start":  "react-scripts start",
+                    "build":  "react-scripts build",
+                    "predeploy":  "npm run build:github-pages",
+                    "deploy":  "gh-pages -d build",
+                    "build:github-pages":  "node build-github-pages.js"
+                },
+    "eslintConfig":  {
+                         "extends":  [
+                                         "react-app",
+                                         "react-app/jest"
+                                     ]
+                     },
+    "browserslist":  {
+                         "production":  [
+                                            "\u003e0.2%",
+                                            "not dead",
+                                            "not op_mini all"
+                                        ],
+                         "development":  [
+                                             "last 1 chrome version",
+                                             "last 1 firefox version",
+                                             "last 1 safari version"
+                                         ]
+                     },
+    "devDependencies":  {
+                            "gh-pages":  "^6.3.0"
+                        }
 }

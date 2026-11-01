@@ -55,7 +55,8 @@ const pages = {
   "country-russia": CountryPage,
 };
 
-const basePath = process.env.PUBLIC_URL || "";
+const publicUrl = process.env.PUBLIC_URL || "";
+const basePath = publicUrl.startsWith("http") ? new URL(publicUrl).pathname.replace(/\/$/, "") : publicUrl;
 const pagePaths = {
   home: "",
   about: "about",
