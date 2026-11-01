@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Amreen-Consultancy-Website/static/css/main.bf2ce1ff.css",
-    "main.js": "/Amreen-Consultancy-Website/static/js/main.8376d122.js",
+    "main.js": "/Amreen-Consultancy-Website/static/js/main.de12afbc.js",
     "static/media/Saudi Arabia Hero.png": "/Amreen-Consultancy-Website/static/media/Saudi Arabia Hero.94b16781238dcd61261b.png",
     "static/media/Saudi Arabia Construcion.png": "/Amreen-Consultancy-Website/static/media/Saudi Arabia Construcion.bd6ff966b65a084a48f3.png",
     "static/media/Qatar Hero.png": "/Amreen-Consultancy-Website/static/media/Qatar Hero.dbbf5efebc5cff2e612d.png",
@@ -48,10 +48,10 @@
     "static/media/world-map.jpeg": "/Amreen-Consultancy-Website/static/media/world-map.844681b42ea6faedb34a.jpeg",
     "index.html": "/Amreen-Consultancy-Website/index.html",
     "main.bf2ce1ff.css.map": "/Amreen-Consultancy-Website/static/css/main.bf2ce1ff.css.map",
-    "main.8376d122.js.map": "/Amreen-Consultancy-Website/static/js/main.8376d122.js.map"
+    "main.de12afbc.js.map": "/Amreen-Consultancy-Website/static/js/main.de12afbc.js.map"
   },
   "entrypoints": [
     "static/css/main.bf2ce1ff.css",
-    "static/js/main.8376d122.js"
+    "static/js/main.de12afbc.js"
   ]
 }

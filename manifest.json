@@ -9,8 +9,9 @@
       "purpose": "any"
     }
   ],
-  "start_url": ".",
+  "start_url": "/Amreen-Consultancy-Website/",
   "display": "standalone",
   "theme_color": "#063B73",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "scope": "/Amreen-Consultancy-Website/"
 }
