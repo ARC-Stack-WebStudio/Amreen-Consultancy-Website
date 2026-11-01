@@ -56,7 +56,7 @@ const pages = {
 };
 
 const publicUrl = process.env.PUBLIC_URL || "";
-const basePath = publicUrl.startsWith("http") ? new URL(publicUrl).pathname.replace(/\/$/, "") : publicUrl;
+const basePath = (publicUrl.startsWith("http") ? new URL(publicUrl).pathname : publicUrl).replace(/\/+$/, "");
 const pagePaths = {
   home: "",
   about: "about",
