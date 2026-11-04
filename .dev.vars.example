@@ -1,0 +1,9 @@
+# Local development only. In production, set client ID, client secret and any refresh token as Worker secrets.
+ZOHO_ACCOUNTS_BASE_URL=https://accounts.zoho.in
+ZOHO_MAIL_API_BASE_URL=https://mail.zoho.in
+ZOHO_CLIENT_ID=
+ZOHO_CLIENT_SECRET=
+ZOHO_REFRESH_TOKEN=
+ZOHO_ACCOUNT_ID=
+ZOHO_FROM_ADDRESS=info@amreenconsultancy.com
+# Bind a private KV namespace as ZOHO_OAUTH_TOKENS for callback token persistence.

@@ -23,7 +23,7 @@ function ExistingContactForm() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const update = (event) => setData({ ...data, [event.target.name]: event.target.value });
-  const submit = (event) => {
+  const submit = async (event) => {
     event.preventDefault();
     const next = {};
     if (!data.name.trim()) next.name = 'Please enter your full name.';
@@ -33,10 +33,21 @@ function ExistingContactForm() {
     setErrors(next);
     if (Object.keys(next).length) return;
     setLoading(true);
-    setTimeout(() => { setLoading(false); setSent(true); setData(initial); }, 600);
+    try {
+      const response = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ type: 'general', ...data }) });
+      if (!response.ok) throw new Error('Submission failed');
+      setSent(true);
+      setData(initial);
+      setErrors({});
+    } catch {
+      setErrors((current) => ({ ...current, submit: 'Unable to submit your enquiry right now. Please try again or contact us directly.' }));
+    } finally {
+      setLoading(false);
+    }
   };
   return <form className="contact-form" noValidate onSubmit={submit}>
     {sent && <div className="form-success" role="status">Thank you. Our team will be in touch shortly.</div>}
+    {errors.submit && <div className="form-error" role="alert">{errors.submit}</div>}
     <div className="row g-4">
       <Field label="Full name" name="name" value={data.name} onChange={update} error={errors.name} />
       <Field label="Email address" name="email" type="email" value={data.email} onChange={update} error={errors.email} />
@@ -100,39 +111,13 @@ function RecruitmentForm() {
     setErrors(next);
     if (Object.keys(next).length) return;
 
-    const { REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, REACT_APP_EMAILJS_PUBLIC_KEY } = process.env;
-    if (!REACT_APP_EMAILJS_SERVICE_ID || !REACT_APP_EMAILJS_TEMPLATE_ID || !REACT_APP_EMAILJS_PUBLIC_KEY) {
-      setStatus('error');
-      return;
-    }
-
     setLoading(true);
     setStatus('');
     try {
-      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          service_id: REACT_APP_EMAILJS_SERVICE_ID,
-          template_id: REACT_APP_EMAILJS_TEMPLATE_ID,
-          user_id: REACT_APP_EMAILJS_PUBLIC_KEY,
-          template_params: {
-            to_email: 'tyesionkhan2001@gmail.com',
-            reply_to: data.email.trim(),
-            subject: `New Recruitment Enquiry — Amreen Consultancy — ${data.companyName.trim()}`,
-            company_name: data.companyName.trim(),
-            country: data.country,
-            industry: data.industry,
-            number_of_workers: data.workers.trim(),
-            positions_required: data.positions.trim(),
-            contact_person: data.contactPerson.trim(),
-            email: data.email.trim(),
-            telephone: data.telephone.trim(),
-            additional_requirements: data.requirements.trim() || 'None provided.',
-            submitted_via: 'Amreen Consultancy Website',
-            contact_page: window.location.href,
-          },
-        }),
+        body: JSON.stringify({ type: 'recruitment', ...data }),
       });
       if (!response.ok) throw new Error('Email service rejected the enquiry.');
       setData(enquiryInitial);

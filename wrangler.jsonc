@@ -1,0 +1,23 @@
+{
+    "name":  "amreen-consultancy-website",
+    "main":  "./worker/contact.js",
+    "compatibility_date":  "2026-11-03",
+    "keep_vars": true,
+    "build":  {
+                   "command":  "npm run build:production"
+               },
+    "assets":  {
+                   "directory":  "./build",
+                   "binding":  "ASSETS",
+                   "not_found_handling":  "single-page-application",
+                   "run_worker_first":  [
+                                            "/api/*"
+                                        ]
+               },
+    "kv_namespaces":  [
+                          {
+                              "binding":  "ZOHO_OAUTH_TOKENS",
+                              "id":  "0f12b312c130433f9e9290a233ef48ba"
+                          }
+                      ]
+}
