@@ -100,8 +100,8 @@ export default function Header({ page, navigate }) {
 					</button>
 				))}
 
-				<CountryDropdown page={page} navigate={navigate} mobile />
-				<IndustryDropdown page={page} navigate={navigate} mobile />
+				<CountryDropdown page={page} navigate={go} mobile />
+				<IndustryDropdown page={page} navigate={go} mobile />
 
 				{links.slice(2).map(([id, label]) => (
 					<button key={id} onClick={() => go(id)}>
